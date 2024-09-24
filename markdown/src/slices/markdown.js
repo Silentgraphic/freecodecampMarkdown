@@ -4,14 +4,16 @@ const initialState = {
     markdown: ""
 };
 
-export const markdown = createSlice({
+export const markdownSlice = createSlice({
     name: "markdown",
     initialState,
     reducers: {
-        test: state => {
-            state.markdown = "Hello World";
+        updateMarkdown: (state, action) => {
+            state.markdown = `<p>${action.payload}</p>`;
         }
     }
 });
 
-export default markdown.reducer;
+export const { updateMarkdown } = markdownSlice.actions;
+
+export default markdownSlice.reducer;

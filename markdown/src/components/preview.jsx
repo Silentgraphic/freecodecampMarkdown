@@ -1,7 +1,7 @@
-import { marked } from 'marked';
+import { useSelector } from 'react-redux';
 
 function Preview() {
-    let test = marked.parse("# Marked in Node.js\n\nRendered by **marked**.");
+    let test = useSelector(state => state.markdown.markdown);
 
     return (
         <div id="preview" dangerouslySetInnerHTML={{ __html: test }}></div >
