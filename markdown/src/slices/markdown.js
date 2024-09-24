@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { marked } from 'marked';
+import md from "../assets/markdownPreview.md?raw";
 
 marked.use({
     gfm: true,
@@ -7,7 +8,7 @@ marked.use({
 });
 
 const initialState = {
-    markdown: marked.parse('# Please type some markdown')
+    markdown: marked.parse(md)
 };
 
 export const markdownSlice = createSlice({
