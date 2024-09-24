@@ -15,7 +15,7 @@ export const markdownSlice = createSlice({
     initialState,
     reducers: {
         updateMarkdown: (state, action) => {
-            state.markdown = `<p>${marked.parse(action.payload)}</p>`;
+            state.markdown = `${marked.parse(action.payload)}`;
         }
     }
 });
