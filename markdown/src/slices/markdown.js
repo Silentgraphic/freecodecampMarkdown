@@ -1,7 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { marked } from 'marked';
+
+marked.use({
+    gfm: true,
+    breaks: true
+});
 
 const initialState = {
-    markdown: ""
+    markdown: marked.parse('# Please type some markdown')
 };
 
 export const markdownSlice = createSlice({
@@ -9,7 +15,7 @@ export const markdownSlice = createSlice({
     initialState,
     reducers: {
         updateMarkdown: (state, action) => {
-            state.markdown = `<p>${action.payload}</p>`;
+            state.markdown = `<p>${marked.parse(action.payload)}</p>`;
         }
     }
 });
