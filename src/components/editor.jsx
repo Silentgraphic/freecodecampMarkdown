@@ -5,7 +5,7 @@ function Editor() {
     const dispatch = useDispatch();
 
     return (
-        <textarea id="editor" onChange={(event) => dispatch(updateMarkdown(event.target.value))}></textarea>
+        <textarea id="editor" placeholder="Please enter some markdown" onChange={(event) => dispatch(updateMarkdown(event.target.value))}></textarea>
     );
 }
 

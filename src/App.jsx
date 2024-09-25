@@ -5,7 +5,7 @@ import Preview from './components/preview';
 function App() {
 
   return (
-    <div>
+    <div id="app">
       <Editor />
       <Preview />
     </div>

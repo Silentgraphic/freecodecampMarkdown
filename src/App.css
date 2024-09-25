@@ -1,0 +1,36 @@
+#app {
+    background-color: gainsboro;
+    margin: 0 auto;
+    max-width: 80%;
+    min-height: 90vh;
+    padding: 30px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px 5px;
+}
+
+#app>* {
+    width: 49%;
+    min-width: 350px;
+}
+
+#editor {
+    padding: 0;
+    max-height: 100%;
+    background-color: black;
+    color: greenyellow;
+    border: none;
+    font: 1.1rem Inconsolata, monospace;
+    resize: none;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#preview {
+    background-color: dimgray;
+}
+
+#preview img {
+    width: 90%;
+}
