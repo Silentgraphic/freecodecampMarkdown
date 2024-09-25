@@ -16,6 +16,15 @@
     width: 300px;
 }
 
+#app>h1 {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
 #editor,
 #preview {
     box-sizing: border-box;
