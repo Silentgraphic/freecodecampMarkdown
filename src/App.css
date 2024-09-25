@@ -43,6 +43,7 @@
 #preview {
     background-color: darkgray;
     padding: 10px 25px;
+    overflow: auto;
 }
 
 #preview h1 {
