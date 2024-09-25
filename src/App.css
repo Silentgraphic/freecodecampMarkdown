@@ -57,6 +57,12 @@
     border-bottom: 1px solid gray;
 }
 
+#placeHolder {
+    border-bottom: none !important;
+    text-align: center;
+    opacity: 40%;
+}
+
 #preview img {
     width: 90%;
 }

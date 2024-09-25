@@ -11,9 +11,15 @@ function Preview() {
         nodes.forEach(node => hljs.highlightBlock(node));
     });
 
-    return (
-        <div id="preview" dangerouslySetInnerHTML={{ __html: test }}></div >
-    );
+    if (test === "") {
+        return (
+            <div id="preview"><h1 id="placeHolder">Your markdown will be shown here</h1></div >
+        );
+    } else {
+        return (
+            <div id="preview" dangerouslySetInnerHTML={{ __html: test }}></div >
+        );
+    }
 }
 
 export default Preview;
