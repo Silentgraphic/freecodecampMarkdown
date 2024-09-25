@@ -2,13 +2,13 @@
     background-color: gainsboro;
     margin: 0 auto;
     max-width: 80%;
-    min-height: 90vh;
     padding: 30px 35px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 15px 30px;
     flex-direction: row;
+    padding-bottom: 40px;
 }
 
 #app>* {
@@ -37,6 +37,7 @@
     font: 1.1rem Inconsolata, monospace;
     resize: none;
     padding: 10px;
+    height: 400px;
 }
 
 #preview {
