@@ -66,3 +66,25 @@
 #preview img {
     width: 90%;
 }
+
+#preview table {
+    border-spacing: 0px;
+}
+
+#preview th {
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 0 10px;
+    border-right: 1px solid black;
+    margin-right: -100px;
+}
+
+#preview td {
+    padding: 5px;
+    border-right: 1px solid black;
+}
+
+#preview th:last-child,
+#preview td:last-child {
+    border-right: none;
+}
