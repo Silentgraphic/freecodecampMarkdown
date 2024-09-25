@@ -7,28 +7,44 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px 5px;
+    gap: 15px 30px;
+    flex-direction: row;
 }
 
 #app>* {
-    width: 49%;
-    min-width: 350px;
+    flex-grow: 1;
+    width: 300px;
+}
+
+#editor,
+#preview {
+    box-sizing: border-box;
 }
 
 #editor {
-    padding: 0;
-    max-height: 100%;
     background-color: black;
     color: greenyellow;
     border: none;
     font: 1.1rem Inconsolata, monospace;
     resize: none;
     padding: 10px;
-    box-sizing: border-box;
 }
 
 #preview {
-    background-color: dimgray;
+    background-color: darkgray;
+    padding: 10px 25px;
+}
+
+#preview h1 {
+    border-bottom: 3px solid gray;
+}
+
+#preview h2 {
+    border-bottom: 2px solid gray;
+}
+
+#preview h3 {
+    border-bottom: 1px solid gray;
 }
 
 #preview img {
